@@ -11,10 +11,13 @@ KNN is a machine learning Algorithm that help in the following:
 
 """
 
-# first lets create a fucntion for the eculidean distance as it helps in calculating the distance for us
+# first lets create a fucntion for the eculidean distance as it helps in 
+# calculating the distance for us
 import numpy as np
 
 from collections import Counter
+
+# Euclidean function to help calculate the distance
 def euclidean_dis(x1, x2):
     euc_distance = np.sqrt(np.sum((x1-x2)**2))
     return euc_distance
@@ -22,6 +25,7 @@ def euclidean_dis(x1, x2):
 
 
 class KNN:
+    # KNN class for the algorithm
     def __init__(self, k=3):
         self.k = k
     
